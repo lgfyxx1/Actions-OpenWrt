@@ -4,9 +4,11 @@
 # Lisence: MIT
 # Author: P3TERX
 # Blog: https://p3terx.com
+# https://github.com/coolsnowwolf/lede
+# cd openwrt && make menuconfig
 #=================================================
 
-name: Newwifid2 usb
+name: Newwifid2
 
 on:
   repository_dispatch:
@@ -23,7 +25,7 @@ on:
     types: started
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/lgfyxx1/lean-lede 
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
