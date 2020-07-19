@@ -14,7 +14,7 @@ on:
     types: published
   push:
     branches:
-      - master
+      - lede-17.01
     paths:
       - '.config'
 #  schedule:
