@@ -14,7 +14,5 @@
 # sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.14/g' ./target/linux/ramips/Makefile
 
 # Add a feed source
-sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i '$a src-git smartdns https://github.com/pymumu/smartdns.git' feeds.conf.default
-sed -i '$a src-git luci https://github.com/pymumu/luci-app-smartdns.git' feeds.conf.default
+#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #sed -i '$a src-git lienol https://github.com/lgfyxx/lienol-openwrt-package.git' feeds.conf.default
