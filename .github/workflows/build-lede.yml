@@ -8,7 +8,7 @@
 # cd openwrt && make menuconfig
 #=================================================
 
-name: D2-Lede
+name: d2-lede
 
 on:
   repository_dispatch:
