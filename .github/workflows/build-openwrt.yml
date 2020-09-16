@@ -8,7 +8,7 @@
 # cd openwrt && make menuconfig
 #=================================================
 
-name: Newwifid2ctcg
+name: Newwifid2cw
 
 on:
   repository_dispatch:
@@ -16,7 +16,7 @@ on:
     types: published
   push:
     branches:
-      - lede-17.01
+      - main
     paths:
       - '.config'
 #  schedule:
