@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: D2-Openwrt
+name: d2-openwrt
 
 on:
   repository_dispatch:
