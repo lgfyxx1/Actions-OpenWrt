@@ -11,9 +11,9 @@
 # Uncomment a feed source
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 #移除不用软件包
-rm -rf luci-app-passwall package/lienol
+rm -rf package/lienol
 # Add a feed source
-sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git lienol https://github.com/xiaorouji/openwrt-package' feeds.conf.default
 #sed -i '$a src-git lienol https://github.com/lgfyxx/lienol-openwrt-package.git' feeds.conf.default
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 
