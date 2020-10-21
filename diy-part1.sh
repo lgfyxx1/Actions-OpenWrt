@@ -12,8 +12,9 @@
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 #移除不用软件包
 rm -rf package/lienol/luci-app-passwall
+rm -rf package/lean/luci-app-ssr-plus
 # 添加软件包
 sed -i '$a src-git lienol https://github.com/xiaorouji/openwrt-package' feeds.conf.default
 #sed -i '$a src-git lienol https://github.com/lgfyxx/lienol-openwrt-package.git' feeds.conf.default
-#sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 
