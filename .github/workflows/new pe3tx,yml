@@ -57,15 +57,6 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
-        
-    - name: Make Clean 
-      run: make clean
-      
-    - name: Make Clean 1 
-      run: rm -rf tmp
-      
-    - name: Make Clean 2 
-      run: rm -f .config 
       
     - name: Clone source code
       working-directory: /workdir
