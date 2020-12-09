@@ -59,9 +59,7 @@ jobs:
         sudo chown $USER:$GROUPS /workdir
         
     - name:Make Clean 
-      run: make clean 
-      run: rm -rf tmp
-      run: rm -f .config
+      run: cd openwrt && make clean 
       
     - name: Clone source code
       working-directory: /workdir
@@ -76,6 +74,9 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
+        
+    - name: Clean feeds
+      run: cd openwrt && ./scripts/feeds clean
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
