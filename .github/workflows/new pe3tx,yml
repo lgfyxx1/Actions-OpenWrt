@@ -60,7 +60,11 @@ jobs:
         
     - name: Make Clean 
       run: cd openwrt && make clean
+      
+    - name: Make Clean 1 
       run: cd openwrt && rm -rf tmp
+      
+    - name: Make Clean 2 
       run: cd openwrt && rm -f .config 
       
     - name: Clone source code
