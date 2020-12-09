@@ -59,7 +59,9 @@ jobs:
         sudo chown $USER:$GROUPS /workdir
         
     - name: Make Clean 
-      run: cd openwrt && make clean 
+      run: cd openwrt && make clean
+      run: cd openwrt && rm -rf tmp
+      run: cd openwrt && rm -f .config 
       
     - name: Clone source code
       working-directory: /workdir
