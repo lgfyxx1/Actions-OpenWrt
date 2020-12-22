@@ -16,6 +16,6 @@
 # 添加软件包
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-package.git' feeds.conf.default
 # sed -i '$a src-git lienol https://github.com/lgfyxx/lienol-openwrt-package.git' feeds.conf.default
-# sed -i '$a src-git ssr https://github.com/fw876/helloworld.git' feeds.conf.default
+sed -i '$a src-git hellworld https://github.com/fw876/helloworld.git' feeds.conf.default
 # sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git' feeds.conf.default
 
